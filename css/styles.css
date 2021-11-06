@@ -1,0 +1,742 @@
+/* h1{
+    color: aquamarine;
+    font-size: 8rem;
+}
+h3{
+    color: blueviolet;
+    font-size: 2rem;
+}
+h2{
+    color: blueviolet;
+    font-size: 6rem;
+} */
+
+/* 3:53 u can add specific styles for ur desired h's, p's etc. This can be done by creating id's, making a class. Id's are accessed with #, class with '.' can also be used together just combines them*/
+/* div, spam can be styled as lments and also can add a class or id to style further*/
+/* div{
+color: red;
+background: black;
+}
+<div class = "red">
+<h1> hello </h1>
+</div>*/
+
+/* unversal selector(*) least specificity. */
+
+/* (4:28) saw various ways of giving colors and background colors, hex values, rgb, rgba, etc. for color combination "coolors"*/
+/* 4:56  rems are brouser dependent ie html
+ems are 1em = 16px by default and by changing parent element things can be changed*/
+/* vw,vh are good based on the screen the size is judged. its is screen dependent ie 50% of screen width */
+/* 5:30, 5:41 google fonts */
+/* #line-height = seperation betwenn line is controlled by 1 em values.
+ #letter-spacing = each letter space is controlled
+ # word-spacing = similar to letter-spacing
+ #text-transform = uppercase or lowercase.
+ #text-decoration = line-through, overline,none,underline.
+ #*/
+
+/* 6:07:00.css box model
+ #padding(distance between content and border) = padding-top,padding-right,padding-bottom, padding-left.
+ 
+ #margin(distance between border and screen) = top,rght, bottom, left. 
+
+ negative margin, margin-top:-100px
+ 
+ remember . *{
+     margin = 0;
+ }*
+ margin = 20px auto, automatically sets them in the middle.
+ 
+ #border_style : solid, border-width: 10px, border-color: green
+ border = width, style, color.
+ border-bottom-color,style,width.
+ 
+ #border-radius: 20px,50%
+ 
+ #outline, similar to border but difference is offset.
+ outline-offset : 10px.*/
+
+/* /* 6:35:00. */
+
+/* .block{
+    background: blue;
+    color: black;
+}
+.inline{
+    background: red;
+    color: black;
+    display: block;
+} */
+/* #display: block, inline. some elements are by default set to start from newline or in the same line that can also be controlled by display property. 
+ 
+ /* 6:44 use of display property */
+/* body {
+  text-align: center;
+}
+.block {
+  background: blue;
+  color: black;
+  width: 150px;
+  margin: 20px auto;
+  /* margin-left: auto;
+   margin-right: auto;  technique used for centering the block.
+} 
+ .inline {
+  background: red;
+  color: black;
+  display: block; 
+}*/
+
+/* 6:49*/
+/* div{
+    background: blue;
+    color:white;
+    padding: 20px;
+    margin: 20px;
+}  margin and padding are respected in the block*/
+/* 
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+ul li{
+    list-style-type: none;
+}
+ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    background: yellow;
+    color:tomato;
+    display: block;
+    padding: 5px;
+    margin: 10px 10px;
+}   */
+/* BROUSER does not respect inline padding and margin, so we convert inline elemnts to block elements and use padding and margin. */
+
+/* 6:58 INLINE-BLOCK */
+/* a{
+    font-size: 30px;
+    background: red;
+    margin: 30px; /*added only in left and right */
+/* display: inline-block;} */
+
+/*7:01 BORDER-BOX  */
+
+/* .box-1,.box-2,.box-3{
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+.box-1{
+    background: red;
+     padding: 20px;  /*bcpz the padding was added the original size of 200x200 became 240x240 this is trouble osme so we use border-box */
+/* box-sizing: border-box; padding is added inside the content, so it does not affect the layout }
+.box-2{
+    background: brown;
+}
+.box-3{
+    background: green;
+    padding: 20px;
+} */
+/* so we add margin, padding, box_sizing in the universal selector. 
+7:09 OPACITY, VISIBILITY*/
+
+/* div{
+    background: blue;
+    margin: 10px;
+    color: white;
+}
+.none{
+    display: none;
+}
+
+.opacity-1{
+    opacity: 1;
+}
+.opacity-0{
+    opacity: 0;
+}
+.opacity-5{
+    opacity: 0.5;
+}
+.visibility{
+    visibility: hidden;
+} opacity similar to color: rgba
+
+7:16 background images*/
+
+/* div{
+    height: 300px;
+    color: red;
+}
+
+.big-img{
+    background: url('./images/CLR 2.png');
+    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-repeat: space;
+    /* background-repeat: round;
+    background-size: cover; single image covers the background by suffereing pixel enlargation
+    background_position: center, bottom, left, right, top;
+    background-position: 20% 50% (distance from x,y axis)
+    background-attacment: fixed */
+/* } */
+
+/* 7:47 gradient
+div{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    margin: 5px;
+}
+
+.one{
+    background: linear-gradient(red,green)
+}
+.two{
+    background: linear-gradient(to top,red,green, blue, yellow)
+}
+.three{
+    background: linear-gradient(150deg,red,green, blue, yellow)
+}
+.four{
+    background: linear-gradient(to top left,red,green, blue, yellow)
+}
+.five{
+    background: linear-gradient(to top right,red,green, blue, yellow)
+}
+.six{
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.9));
+}
+.seven{
+    background: linear-gradient(to left, rgba(0,0,0,0.3), rgba(0,0,0,0.9));
+}
+ */
+
+/* 7:57 */
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ div{
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     font-size: 60px;
+     color: orange;
+}
+
+.banner{
+    background: url("../images/forest.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.header{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/forest.jpeg") center/cover no-repeat fixed;
+
+} */
+/* css linear gradient generator 8:07 */
+
+/* Float Position Intro - 08:11:08 */
+/* .banner{
+    border: 5px solid red;
+    padding: 10px;
+    overflow:hidden; 
+     /*to avoid overflow of the image if its large */
+/* } */
+/* .one{
+    float: left;
+    height: 150px;
+    margin-right: 25px;
+} */
+
+/* p{
+    clear: both;
+} */
+
+/* 8:19 */
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    float:left;
+    height: 200px;
+    width: 33.33%;
+}
+h1{
+    clear:both;
+}
+/* so that there is adjustment with other divs */
+/* .one{
+    
+    background: red;
+    
+}
+.two{
+    
+    background:green;
+    
+}
+.three{
+    
+    background:blue;
+    
+} */
+
+/* 8:26 positions */
+/* div {
+  border: 3px solid red;
+  background: yellow;
+  margin-top: 40px;
+  position: static;
+} */
+/* .one {
+  background: blue;
+  /* position: relative;
+    top: 50px;
+     left: 20rem;
+    /* right: 50%;
+    bottom: 200px;  */
+/* } */
+/* .two {
+  background: green;
+  position: relative;
+} */
+/* adding relative here special takes relative postion from two for absolute position */
+/* .special {
+  background: lightcoral;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+} */
+/* now position: absolute makes the spam to take relative posiotn directly from body leaving p, div */
+
+/* button{
+    background: red;
+    font-size: 40px;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+} */
+
+/* 8:43 */
+/*body{
+    background:green;
+}
+.banner{
+    background: blue;
+}
+ h1{
+ color: white;
+ text-align: center;
+ text-decoration: underline;
+ text-transform: capitalize;
+}
+
+@media screen and (min-width:576px){
+    body{
+        background: red;
+    }
+    .banner{
+        background: yellow;
+    }
+    h1{
+        color: black;
+        font-size: 60px;
+    }
+}
+@media screen and (min-width:768px){
+    body{
+        background: green;
+    }
+    .banner{
+        background: blue;
+    }
+    h1{
+        color: red;
+        font-size: 60px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+} */
+
+/* 8:57 */
+/* img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+.banner{
+    margin: 20px;
+    width: 70vw;
+    height: 72vh;
+    border: 5px solid red;
+    position: relative;
+}
+.one{
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.two{
+    top: 10%;
+    left: 10%;
+    z-index: -1;
+}
+.one{
+    top: 20%;
+    left: 20%;
+    z-index: -3;
+} */
+
+/* 9:06 pseudo elemnts bfr after */
+
+/* p::before{
+    content: "hello ";
+    font-weight: bold;
+    display: block;
+    background: black;
+    font-size: 2rem;
+    color: red;
+}
+p::after{
+    content: "after ";
+    font-weight: bold;
+    display: block;
+    background: black;
+    font-size: 2rem;
+    color: red;
+}
+div{
+    width: 50vh;
+    margin:  100px auto;
+    position: relative;
+}
+img{
+    width: 100%;
+    display:block;
+}
+div::before{
+    content: "";
+    border: 2px solid grey;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    top: -40px;
+    left: -40px;
+    z-index: -2;
+    transition: all 0.5s linear;
+
+}
+div::after{
+    content: "";
+    background: grey;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    top: -20px;
+    left: -20px;
+    z-index: -1;
+    transition: all 0.5s linear;
+
+}
+
+div:hover::after,
+div:hover::before{
+    top: 0px;
+    left: 0px;
+}
+ */
+
+
+/* 9:28 basic selectors */
+
+/* *{
+    color: red;
+
+}
+#heading{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: blue;
+}
+.heading{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: green;
+}
+p{
+   letter-spacing: 20px; 
+} */
+
+/* div h1{
+    color: red;
+}
+
+div > h1{
+    color: blue;
+}
+
+.header h1{
+    color: green;
+}
+.header > h1{
+    color: purple;;
+} */
+
+/* 9:36 front word, front letter */
+
+/* p::first-letter{
+    color: red;
+}
+p::first-line{
+    color: green;
+} */
+
+/* p:hover{
+    color: red;
+}
+.header:hover{
+    background: black;
+    color: white;
+}
+a:hover{
+ text-transform: capitalize;
+} */
+
+/* a:link{
+    color: rosybrown;
+}
+a:visited{
+    color: red;
+}  visited, hover, active links*/
+
+
+/* :root{
+    background: red;
+    font-size: 150%;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+.absolute{
+    font-size: 20px;
+}
+.responsive{
+    font-size: 1.5rem;
+} */
+
+/* 9:51(animation) */
+
+/* div{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+.one{
+    background: red;
+    transform: translateX(50%);
+    transform: scale(2,3);
+    transform: rotate(45deg);
+    transform: skew(20deg,40deg);
+}
+.two{
+    background: green;
+    transform: translateY(30px);
+    transform: rotateX(60deg);
+}
+.three{
+    background: blue;
+    transform: translate(20px, 30px);
+} */
+
+/* 10:06 */
+/* div{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+/* div:hover{
+    background: salmon;
+} */
+/* .one{
+    background: red;
+   
+}
+.two{
+    background: green;
+    transition: all 1s 2s;
+    
+}
+.three{
+    background: blue;
+    /* transition-property: background, border-radius;
+    transition-duration: 0.5s,1s;
+    transition-delay: 1s; */
+    /* transition: background 1s 3s, border-radius 1s 3s;
+} */
+/* .three:hover{
+    border-radius: 50%;
+    background: salmon;
+   
+}
+.two:hover{
+    border-radius: 50%;
+    background: salmon;
+   
+} */
+
+
+
+/* 10:17 */
+
+/* div{
+    width: 100px;
+    height: 100px;
+    background: green;
+    color: white;
+    margin: 10px;
+    transition: all 1s;
+}
+div:hover{
+    transform: translateX(1000px);
+}
+.ease{
+    transition-timing-function: ease;
+}
+.linear{
+    transition-timing-function: linear;
+}
+.ease-in{
+    transition-timing-function: ease-in;
+}
+.ease-out{
+    transition-timing-function: ease-out;
+}
+
+.ease-in-out{
+    transition-timing-function: ease-in-out;
+} */
+
+/* 10:26 */
+
+/* div{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.transition{
+    background: red;
+    transition: all 1s ease;
+}
+.transition:hover{
+    background: salmon;
+    transform: translateX(100px);
+}
+
+.animation{
+    background: blue; */
+    /* animation-name: move;
+    animation-duration: 10s;
+    animation-iteration-count: 2; */
+    /* animation: move 5s infinite;
+}
+
+@keyframes move {
+    0%{
+        transform: translateX(20px);
+    }
+    50%{
+        transform: translateX(100px);
+        background: green;
+    }
+    75%{
+        transform: translateX(-200px);
+        background: yellow;
+    }
+    75%{
+        transform: translateX(20px);
+        background: orange;
+    }
+} */
+
+/* 10:40  css variables
+.heading{
+    color: red;
+}
+.text{
+    color: green;
+}
+.main-text{
+    color: blue;
+}
+.second-heading{
+    color: red;
+}
+*/
+
+/* :root{
+    --primaryColor: #f15025;
+    --secondaryColor: green;
+    --mainTransition: all 0.34s linear;
+}
+
+.heading{
+    color: var(--primaryColor);
+}
+.second-heading{
+    color: var(--primaryColor);
+    transition: var(--mainTransition);
+
+}
+
+.second-heading:hover{
+    color: var(--secondaryColor);
+}
+
+div{
+    --primaryRed: red;
+}
+.main-text{
+    color: var(--primaryRed);
+} */
+
+
+/* 10:56 font-Awsome icons */
+
+/* 11:07 css text shadow gemerator, box shadow generator */
+
+h1{
+    text-shadow: 1px 3px 5px red;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background: green;
+    margin: 20px;
+    box-shadow: 3px 2px 5px blue;
+}
